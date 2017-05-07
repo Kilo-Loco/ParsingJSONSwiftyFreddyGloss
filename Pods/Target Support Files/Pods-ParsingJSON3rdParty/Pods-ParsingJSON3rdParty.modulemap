@@ -1,0 +1,6 @@
+framework module Pods_ParsingJSON3rdParty {
+  umbrella header "Pods-ParsingJSON3rdParty-umbrella.h"
+
+  export *
+  module * { export * }
+}

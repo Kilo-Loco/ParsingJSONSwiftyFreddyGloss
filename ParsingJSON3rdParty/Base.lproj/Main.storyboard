@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParsingJSON3rdParty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AJk-Qb-Xh7">
+                                <rect key="frame" x="16" y="28" width="343" height="121.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZK-q7-9Nt">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAV-zw-Z0J">
+                                        <rect key="frame" x="0.0" y="50.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTB-Ab-lLr">
+                                        <rect key="frame" x="0.0" y="101" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JTB-Ab-lLr" firstAttribute="leading" secondItem="AJk-Qb-Xh7" secondAttribute="leading" id="2hm-ep-IDp"/>
+                                    <constraint firstAttribute="trailing" secondItem="nAV-zw-Z0J" secondAttribute="trailing" id="90R-i7-Mpy"/>
+                                    <constraint firstAttribute="trailing" secondItem="JTB-Ab-lLr" secondAttribute="trailing" id="AnX-iW-oO9"/>
+                                    <constraint firstItem="VZK-q7-9Nt" firstAttribute="leading" secondItem="AJk-Qb-Xh7" secondAttribute="leading" id="Hzc-Fi-CVL"/>
+                                    <constraint firstItem="VZK-q7-9Nt" firstAttribute="top" secondItem="AJk-Qb-Xh7" secondAttribute="top" id="JiY-t2-eCj"/>
+                                    <constraint firstItem="nAV-zw-Z0J" firstAttribute="top" secondItem="VZK-q7-9Nt" secondAttribute="bottom" id="L3l-wp-vEQ"/>
+                                    <constraint firstItem="JTB-Ab-lLr" firstAttribute="top" secondItem="nAV-zw-Z0J" secondAttribute="bottom" id="cHd-E8-SIa"/>
+                                    <constraint firstItem="nAV-zw-Z0J" firstAttribute="leading" secondItem="AJk-Qb-Xh7" secondAttribute="leading" id="ms3-Qb-3K8"/>
+                                    <constraint firstAttribute="trailing" secondItem="VZK-q7-9Nt" secondAttribute="trailing" id="qho-SZ-KuM"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="A03-Ct-gXw">
+                                <rect key="frame" x="16" y="225" width="343" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Go-Ph-TI4">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <state key="normal" title="SwiftyJSON Person"/>
+                                        <connections>
+                                            <action selector="getSwiftyPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HfG-j5-VY9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2n7-Ag-3Kv">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="30"/>
+                                        <state key="normal" title="Freddy Person"/>
+                                        <connections>
+                                            <action selector="getFredyPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6BQ-J4-QDo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-aE-HOX">
+                                        <rect key="frame" x="0.0" y="100" width="343" height="30"/>
+                                        <state key="normal" title="Gloss Person"/>
+                                        <connections>
+                                            <action selector="getGlossPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xeV-ud-nPD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOc-5C-jad">
+                                        <rect key="frame" x="0.0" y="150" width="343" height="30"/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wp4-GI-4jj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="A03-Ct-gXw" secondAttribute="trailing" id="UTc-NK-dRY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AJk-Qb-Xh7" secondAttribute="trailing" id="abT-qp-foc"/>
+                            <constraint firstItem="A03-Ct-gXw" firstAttribute="top" secondItem="AJk-Qb-Xh7" secondAttribute="bottom" constant="75.5" id="b8U-4L-ffB"/>
+                            <constraint firstItem="A03-Ct-gXw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iX2-0H-7Xg"/>
+                            <constraint firstItem="AJk-Qb-Xh7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jEp-o6-Fvy"/>
+                            <constraint firstItem="AJk-Qb-Xh7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xNg-ZZ-GLF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="company" destination="JTB-Ab-lLr" id="g1W-ix-WOl"/>
+                        <outlet property="location" destination="nAV-zw-Z0J" id="iwJ-qi-ZLh"/>
+                        <outlet property="name" destination="VZK-q7-9Nt" id="8Ox-Gt-UUP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
